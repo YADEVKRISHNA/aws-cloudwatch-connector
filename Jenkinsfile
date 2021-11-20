@@ -11,7 +11,7 @@ pipeline
  	 	stage('deploy to exchange'){
  	 	
  	 	steps{
- 	 		sh 'mvn -f pom.xml deploy -DskipTests'
+ 	 		sh 'mvn -f pom.xml clean deploy -DskipTests'
  	 	}
  	 	}
  	 
