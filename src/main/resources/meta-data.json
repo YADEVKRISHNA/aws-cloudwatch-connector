@@ -1,0 +1,72 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/Welcome9Element"
+    },
+    "definitions": {
+        "Welcome9Element": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "IngestionTime": {
+                    "type": "integer"
+                },
+                "Message": {
+                    "$ref": "#/definitions/Message"
+                },
+                "Timestamp": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "IngestionTime",
+                "Message",
+                "Timestamp"
+            ],
+            "title": "Welcome9Element"
+        },
+        "Message": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "TRACE_POINT": {
+                    "type": "string"
+                },
+                "Message": {
+                    "type": "string"
+                },
+                "Environment": {
+                    "type": "string"
+                },
+                "Payload": {
+                    "type": "string"
+                },
+                "App_Version": {
+                    "type": "string"
+                },
+                "LEVEL": {
+                    "type": "string"
+                },
+                "CorrelationId": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "App_Name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "App_Name",
+                "App_Version",
+                "CorrelationId",
+                "Environment",
+                "LEVEL",
+                "Message",
+                "Payload",
+                "TRACE_POINT"
+            ],
+            "title": "Message"
+        }
+    }
+}
