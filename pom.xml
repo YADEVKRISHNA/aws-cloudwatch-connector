@@ -20,7 +20,7 @@
 
 	<distributionManagement>
 		<repository>
-			<id>MuleRepository</id>
+			<id>cloudhub</id>
 			<name>CorporateRepository</name>
 			<url>https://maven.anypoint.mulesoft.com/api/v1/organizations/f5d53aa5-e004-4efd-b229-0984b58b672e/maven
 			</url>
